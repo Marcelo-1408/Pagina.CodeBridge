@@ -9,30 +9,31 @@
 </head>
 
 <body>
-	<!-- Navbar fija para escritorio -->
 	<div class="navbar navbar--extended">
-		<div class="container">
-			<div class="navbar__inner">
-				<a href="index.html" class="navbar__logo">Codebridge</a>
-			</div>
-		</div>
-	</div>
+	<div class="container">
+    <div class="navbar__inner">
+		<a href="index.html" class="navbar__logo"></a>
+	<nav>
+		<ul class="navbar__menu">
+			<li><a href="index.html" class="navbar__link">Inicio</a></li>
+			<li><a href="reseñas.html" class="navbar__link">Reseñas</a></li>
+			<li><a href="contactanos.html" class="navbar__link">Contacto</a></li>
+			<li><a href="trabrealizados.html" class="navbar__link">Trabajos realizados</a></li>
+		</ul>
+	</nav>
+    </div>
+</div>
+</div>
 
 	<!-- Hero principal -->
 	<div class="hero">
 		<div class="hero__overlay hero__overlay--gradient"></div>
 		<div class="hero__mask"></div>
-		<div class="hero__inner">
-			<div class="container">
-				<div class="hero__content">
-					<div class="hero__content__inner">
-						<h1 class="hero__title">
-							Transformamos ideas en soluciones tecnológicas que combinan innovación, escalabilidad e impacto tangible para el éxito de tu empresa o startup.
-						</h1>
-						<p class="hero__text">"Conectamos ideas con tecnología"</p>
-					</div>
-				</div>
-			</div>
+		<h1 class="hero__title">
+			CODEBRIDGE
+		</h1>
+		<p class="hero__text">"Conectamos ideas con tecnología"</p>
+		<div class="hero__sub">
 		</div>
 	</div>
 
@@ -104,40 +105,22 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- Sección: Reseñas -->
-	<div class="reviews landing__section">
+	<div id="work" class="expanded landing__section">
 		<div class="container">
-			<h2 class="reviews__title">Lo que dice la gente</h2>
-			<div class="reviews__carousel">
-				<div class="reviews__item">
-					<p>“El equipo de CODEBRIGE logró transformar nuestra idea en una aplicación moderna, ágil y fácil de usar. Nos acompañaron en cada etapa del desarrollo.”</p>
-					<p class="reviews__author">- María López</p>
-				</div>
-				<div class="reviews__item">
-					<p>“Nos ayudaron a migrar nuestra infraestructura a la nube sin interrupciones. Hoy trabajamos con mayor estabilidad y ahorro de recursos.”</p>
-					<p class="reviews__author">- Andrés Núñez</p>
-				</div>
-				<div class="reviews__item">
-					<p>“Fortalecieron la seguridad de nuestros sistemas. Desde entonces, tenemos total tranquilidad sobre la protección de nuestros datos.”</p>
-					<p class="reviews__author">- Laura Rodríguez</p>
-				</div>
-				<div class="reviews__item">
-					<p>“Implementaron un sistema de análisis inteligente que mejoró nuestras decisiones estratégicas. Un antes y un después en nuestra gestión.”</p>
-					<p class="reviews__author">- Sebastián Cruz</p>
-				</div>
-				<div class="reviews__item">
-					<p>“Gracias a su asesoramiento, nuestro equipo aprendió a organizarse mejor y mejorar la comunicación interna.”</p>
-					<p class="reviews__author">- Paula Herrera</p>
-				</div>
-				<div class="reviews__item">
-					<p>“Nos guiaron paso a paso en la digitalización de nuestros procesos. Hoy somos una empresa más conectada y eficiente.”</p>
-					<p class="reviews__author">- Mariana Ortiz</p>
+			<div class="expanded__inner">
+				<div class="expanded__content">
+					<h2 class="expanded__title">Trabajos realizados</h2>
+					<p class="expanded__text">
+						Aquí irán los detalles de proyectos en los que han trabajado.
+						Puedes usar tarjetas, una galería de imágenes o descripciones de
+						casos de estudio.
+					</p>
 				</div>
 			</div>
 		</div>
-	</div>
-
+	</div>		
+	
+	
 	<!-- Sección: Equipo -->
 	<div class="steps landing__section">
 		<div class="container team-grid">
@@ -147,38 +130,6 @@
 				<div class="step"><h4>Agustín Maidana</h4><p>Director de Proyectos.</p></div>
 				<div class="step"><h4>Nahuel Neistal</h4><p>Diseñador UI/UX.</p></div>
 				<div class="step"><h4>Daniel Acosta</h4><p>Especialista en Cloud.</p></div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Contacto -->
-	<div class="cta cta--reverse cta--purple">
-		<div class="container">
-			<div class="cta__inner">
-				<h2 class="cta__title">¡Contáctanos!</h2>
-				<p class="cta__sub cta__sub--center">¿Quieres que trabajemos juntos? Ingresa tus datos y nos pondremos en contacto contigo.</p>
-
-				<form action="https://formspree.io/f/mpwyjkwb" method="POST">
-					<div class="cta__form">
-						<div class="form__group form__group--half">
-							<label for="nombre">Nombre</label>
-							<input type="text" id="nombre" name="nombre" placeholder="Nombre">
-						</div>
-						<div class="form__group form__group--half">
-							<label for="apellido">Apellido</label>
-							<input type="text" id="apellido" name="apellido" placeholder="Apellido">
-						</div>
-						<div class="form__group">
-							<label for="email">Correo electrónico</label>
-							<input type="email" id="email" name="email" placeholder="Correo electrónico">
-						</div>
-						<div class="form__group">
-							<label for="mensaje">Mensaje</label>
-							<textarea id="mensaje" name="mensaje" rows="5" placeholder="Mensaje"></textarea>
-						</div>
-					</div>
-					<button type="submit" class="button button__accent">Enviar</button>
-				</form>
 			</div>
 		</div>
 	</div>
