@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
 	// Listener to resizes
 	window.onresize = function(event) {
-    	lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 	};
 
 	// Helper functions
@@ -145,8 +145,8 @@ document.addEventListener('DOMContentLoaded',function(){
 			navClass: "nav__mobile", // String: Default CSS class. If changed, you need to edit the CSS too!
 		});
 	} else {
-		 addNewClass(document.querySelector('.navbar__menu'),'navbar__menu--noMob');
-		 addNewClass(document.querySelector('.navbar__menu-mob'), 'navbar__menu-mob--noMob');
+		addNewClass(document.querySelector('.navbar__menu'),'navbar__menu--noMob');
+		addNewClass(document.querySelector('.navbar__menu-mob'), 'navbar__menu-mob--noMob');
 	};	
 });
 (function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.flexibility = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
@@ -973,20 +973,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
        * @param  {Function} callback
        * @param  {scope}    scope
        */
-      forEach = function (array, callback, scope) {
+    forEach = function (array, callback, scope) {
         for (var i = 0; i < array.length; i++) {
-          callback.call(scope, i, array[i]);
+    callback.call(scope, i, array[i]);
         }
-      };
+    };
 
     var nav,
-      opts,
-      navToggle,
-      styleElement = document.createElement("style"),
-      htmlEl = document.documentElement,
-      hasAnimFinished,
-      isMobile,
-      navOpen;
+    opts,
+    navToggle,
+    styleElement = document.createElement("style"),
+    htmlEl = document.documentElement,
+    hasAnimFinished,
+    isMobile,
+    navOpen;
 
     var ResponsiveNav = function (el, options) {
         var i;
@@ -996,19 +996,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
          * @type {Object}
          */
         this.options = {
-          animate: true,                    // Boolean: Use CSS3 transitions, true or false
-          transition: 284,                  // Integer: Speed of the transition, in milliseconds
-          label: "Menu",                    // String: Label for the navigation toggle
-          insert: "before",                 // String: Insert the toggle before or after the navigation
-          customToggle: "",                 // Selector: Specify the ID of a custom toggle
-          closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
-          openPos: "relative",              // String: Position of the opened nav, relative or static
-          navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
-          navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
-          jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
-          init: function(){},               // Function: Init callback
-          open: function(){},               // Function: Open callback
-          close: function(){}               // Function: Close callback
+        animate: true,                    // Boolean: Use CSS3 transitions, true or false
+        transition: 284,                  // Integer: Speed of the transition, in milliseconds
+        label: "Menu",                    // String: Label for the navigation toggle
+        insert: "before",                 // String: Insert the toggle before or after the navigation
+        customToggle: "",                 // Selector: Specify the ID of a custom toggle
+        closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+        openPos: "relative",              // String: Position of the opened nav, relative or static
+        navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
+        navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+        jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+        init: function(){},               // Function: Init callback
+        open: function(){},               // Function: Open callback
+        close: function(){}               // Function: Close callback
         };
 
         // User defined options
